@@ -23,13 +23,13 @@ const (
 	Rotate270 Rotate = 270
 )
 
-// Op represents the
+// Op represents the actions needed to correct the orientation of an image
 type Op struct {
 	Rotate Rotate
 	Flip   Flip
 }
 
-// Orientations store what Op needs to be performed for a given opertation
+// Orientations store what Op needs to be performed for a given operation
 var Orientations = [...]Op{
 	{NoRotate, NoFlip},
 	{NoRotate, FlipHorizontal},
